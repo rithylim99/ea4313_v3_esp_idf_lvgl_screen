@@ -1,0 +1,29 @@
+C:\Users\rithy\AppData\Local\Temp\confgen_tmp94_dt_6h:139: warning: '1' is not a valid value for the bool symbol SOC_PCNT_GROUPS (defined at C:/Espressif/frameworks/esp-idf-v5.0.4\./components/soc/esp32s3/include/soc/Kconfig.soc_caps.in:494). Assignment ignored.
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:292 (message):
+  No source files found for SRC_DIRS entry 'src/gpu'.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:442 (__component_add_sources)
+  components/lvgl/CMakeLists.txt:19 (idf_component_register)
+
+
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:292 (message):
+  No source files found for SRC_DIRS entry 'src/extra/layouts/'.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:442 (__component_add_sources)
+  components/lvgl/CMakeLists.txt:19 (idf_component_register)
+
+
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:292 (message):
+  No source files found for SRC_DIRS entry 'src/extra/themes'.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:442 (__component_add_sources)
+  components/lvgl/CMakeLists.txt:19 (idf_component_register)
+
+
+CMake Warning at C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:292 (message):
+  No source files found for SRC_DIRS entry 'demos'.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.4/tools/cmake/component.cmake:442 (__component_add_sources)
+  components/lvgl/CMakeLists.txt:19 (idf_component_register)
+
+

@@ -1,0 +1,62 @@
+[1/5] cmd.exe /C "cd /D C:\Users\rithy\Documents\MEGA\CHIPTREE\lvgl\ESP32-S3-16R8-43-800-480\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/rithy/Documents/MEGA/CHIPTREE/lvgl/ESP32-S3-16R8-43-800-480/build/partition_table/partition-table.bin C:/Users/rithy/Documents/MEGA/CHIPTREE/lvgl/ESP32-S3-16R8-43-800-480/build/lvgl_demo.bin"
+lvgl_demo.bin binary size 0xd0eb0 bytes. Smallest app partition is 0x2ee000 bytes. 0x21d150 bytes (72%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\rithy\Documents\MEGA\CHIPTREE\lvgl\ESP32-S3-16R8-43-800-480\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/rithy/Documents/MEGA/CHIPTREE/lvgl/ESP32-S3-16R8-43-800-480/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6630 bytes. 0x19d0 bytes (20%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.4\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.4 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.4/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/rithy/Documents/MEGA/CHIPTREE/lvgl/ESP32-S3-16R8-43-800-480/build -P C:/Espressif/frameworks/esp-idf-v5.0.4/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM13 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 lvgl_demo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.6.2
+Serial port COM13
+Connecting....
+Chip is ESP32-S3 (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 3c:84:27:c7:ee:bc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00006fff...
+Flash will be erased from 0x00010000 to 0x000e0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26160 bytes to 15737...
+Writing at 0x00000000... (100 %)
+Wrote 26160 bytes (15737 compressed) at 0x00000000 in 0.8 seconds (effective 260.8 kbit/s)...
+Hash of data verified.
+Compressed 855728 bytes to 403409...
+Writing at 0x00010000... (4 %)
+Writing at 0x00019ec3... (8 %)
+Writing at 0x0002916b... (12 %)
+Writing at 0x0003bec0... (16 %)
+Writing at 0x00048590... (20 %)
+Writing at 0x0004facc... (24 %)
+Writing at 0x0005bca8... (28 %)
+Writing at 0x00074bed... (32 %)
+Writing at 0x0007d3eb... (36 %)
+Writing at 0x0008746e... (40 %)
+Writing at 0x0008caf0... (44 %)
+Writing at 0x00092627... (48 %)
+Writing at 0x00097e18... (52 %)
+Writing at 0x0009d374... (56 %)
+Writing at 0x000a21f9... (60 %)
+Writing at 0x000a7512... (64 %)
+Writing at 0x000ad434... (68 %)
+Writing at 0x000b24c5... (72 %)
+Writing at 0x000b75ef... (76 %)
+Writing at 0x000bc974... (80 %)
+Writing at 0x000c1837... (84 %)
+Writing at 0x000c70fa... (88 %)
+Writing at 0x000ccac1... (92 %)
+Writing at 0x000d6868... (96 %)
+Writing at 0x000dd6bb... (100 %)
+Wrote 855728 bytes (403409 compressed) at 0x00010000 in 9.9 seconds (effective 692.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 122...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (122 compressed) at 0x00008000 in 0.1 seconds (effective 344.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,269 @@
+�xx�x���x�xxx�x����i��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x2224
+load:0x403c9700,len:0xfe0
+load:0x403cc700,len:0x33d0
+entry 0x403c9994
+[0;32mI (27) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 15:22:45[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (29) bootloader_flash: non-XMC chip detected by SFDP Read (85), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) qio_mode: Probing for QIO mode enable...[0m
+D (51) qio_mode: Raw SPI flash chip id 0x852018[0m
+D (56) qio_mode: Manufacturer ID 0x85 chip ID 0x2018[0m
+[0;32mI (61) qio_mode: Enabling default flash chip QIO[0m
+D (66) qio_mode: Initial flash chip status 0x2[0m
+D (71) qio_mode: QIO mode already enabled in flash[0m
+D (76) qio_mode: Enabling QIO mode...[0m
+D (79) boot.esp32s3: magic e9[0m
+D (82) boot.esp32s3: segments 03[0m
+D (86) boot.esp32s3: spi_mode 02[0m
+D (89) boot.esp32s3: spi_speed 0f[0m
+D (92) boot.esp32s3: spi_size 04[0m
+[0;32mI (96) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (100) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (105) boot.esp32s3: SPI Flash Size : 16MB[0m
+D (110) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (114) boot: Enabling RNG early entropy source...[0m
+D (119) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+D (129) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (135) flash_parts: partition table verified, 5 entries[0m
+[0;32mI (140) boot: Partition Table:[0m
+[0;32mI (144) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (151) boot: load partition table entry 0x3c008000[0m
+D (156) boot: type=1 subtype=2[0m
+[0;32mI (159) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (167) boot: load partition table entry 0x3c008020[0m
+D (172) boot: type=1 subtype=1[0m
+[0;32mI (175) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (183) boot: load partition table entry 0x3c008040[0m
+D (188) boot: type=0 subtype=0[0m
+[0;32mI (191) boot:  2 factory          factory app      00 00 00010000 002ee000[0m
+D (198) boot: load partition table entry 0x3c008060[0m
+D (203) boot: type=1 subtype=82[0m
+[0;32mI (206) boot:  3 storage          Unknown data     01 82 002fe000 00200000[0m
+[0;32mI (214) boot: End of partition table[0m
+D (218) boot: Trying partition index -1 offs 0x10000 size 0x2ee000[0m
+D (224) esp_image: reading image header @ 0x10000[0m
+D (229) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (236) esp_image: image header: 0xe9 0x05 0x02 0x04 403796c0[0m
+[0;32mI (242) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=7156ch (464236) map[0m
+D (250) esp_image: free data page_count 0x000001ff[0m
+D (255) bootloader_flash: rodata starts from paddr=0x00010020, size=0x7156c, will be mapped to vaddr=0x3c000000[0m
+D (336) bootloader_flash: mmu set block paddr=0x00080000 (was 0xffffffff)[0m
+[0;32mI (336) esp_image: segment 1: paddr=00081594 vaddr=3fc98500 size=03268h ( 12904) load[0m
+D (340) esp_image: free data page_count 0x000001ff[0m
+D (345) bootloader_flash: rodata starts from paddr=0x00081594, size=0x3268, will be mapped to vaddr=0x3c000000[0m
+D (357) bootloader_flash: mmu set block paddr=0x00080000 (was 0xffffffff)[0m
+[0;32mI (362) esp_image: segment 2: paddr=00084804 vaddr=40378000 size=0b814h ( 47124) load[0m
+D (370) esp_image: free data page_count 0x000001ff[0m
+D (375) bootloader_flash: rodata starts from paddr=0x00084804, size=0xb814, will be mapped to vaddr=0x3c000000[0m
+D (394) bootloader_flash: mmu set block paddr=0x00090000 (was 0xffffffff)[0m
+[0;32mI (394) esp_image: segment 3: paddr=00090020 vaddr=42000020 size=4c25ch (311900) map[0m
+D (400) esp_image: free data page_count 0x000001ff[0m
+D (405) bootloader_flash: rodata starts from paddr=0x00090020, size=0x4c25c, will be mapped to vaddr=0x3c000000[0m
+D (463) bootloader_flash: mmu set block paddr=0x000d0000 (was 0xffffffff)[0m
+[0;32mI (463) esp_image: segment 4: paddr=000dc284 vaddr=40383814 size=04c04h ( 19460) load[0m
+D (467) esp_image: free data page_count 0x000001ff[0m
+D (472) bootloader_flash: rodata starts from paddr=0x000dc284, size=0x4c04, will be mapped to vaddr=0x3c000000[0m
+D (486) bootloader_flash: mmu set block paddr=0x000e0000 (was 0xffffffff)[0m
+D (489) boot: Calculated hash: 59c064f8d90b6499f9821491e8827f249eefb6aa9834192f34eea5d05d3efa14[0m
+[0;32mI (504) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (504) boot: Disabling RNG early entropy source...[0m
+D (509) boot: Mapping segment 0 as DROM[0m
+D (513) boot: Mapping segment 3 as IROM[0m
+D (517) boot: calling set_cache_and_start_app[0m
+D (521) boot: configure drom and irom and start[0m
+D (526) boot: start: 0x403796c0[0m
+[0;32mI (540) cpu_start: Multicore app[0m
+[0;32mI (541) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (541) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (544) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (549) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (555) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (560) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (565) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (571) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (577) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (582) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (588) octal_psram: DriveStrength: 0x00 (1/1)[0m
+D (594) MSPI Timing: tuning success, best point is index 5[0m
+[0;32mI (599) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (604) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (609) esp_psram: Speed: 80MHz[0m
+V mmu_psram: Instructions from flash page9 copy to SPIRAM page0, Offset: 9
+V (641) mmu_psram: after copy instruction, page_id is 5[0m
+[0;32mI (641) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+V (642) esp_psram: after copy .text, used page is 5, start_page is 5, psram_available_size is 8060928 B[0m
+V mmu_psram: Rodata from flash page0 copy to SPIRAM page5, Offset: -5
+V (687) mmu_psram: after copy rodata, page_id is 13[0m
+[0;32mI (687) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+V (688) esp_psram: after copy .rodata, used page is 8, start_page is 13, psram_available_size is 7536640 B[0m
+V (697) mmu: after coalescing, 1 regions are left[0m
+V (702) mmu: found laddr is 0xd0000[0m
+V (705) esp_psram: 8bit-aligned-region: actual_mapped_len is 0x730000 bytes[0m
+V (713) esp_psram: 8bit-aligned-range: 0x730000 B, starting from: 0x3c0d0000[0m
+V (720) esp_psram: ext_bss_size is 0[0m
+[0;32mI (723) cpu_start: Pro cpu up.[0m
+[0;32mI (727) cpu_start: Starting app cpu, entry point is 0x403795a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 1 access error intr clr & ena mask is: 0x1f
+[0;32mI (990) esp_psram: SPI SRAM memory test OK[0m
+D (990) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (990) efuse: In EFUSE_BLK2__DATA4_REG is used 8 bits starting with 13 bit[0m
+D (997) efuse: In EFUSE_BLK1__DATA4_REG is used 7 bits starting with 20 bit[0m
+D (1004) efuse: In EFUSE_BLK1__DATA5_REG is used 8 bits starting with 3 bit[0m
+D (1011) efuse: In EFUSE_BLK1__DATA5_REG is used 5 bits starting with 11 bit[0m
+D (1019) efuse: In EFUSE_BLK1__DATA4_REG is used 7 bits starting with 13 bit[0m
+D (1026) efuse: In EFUSE_BLK1__DATA4_REG is used 7 bits starting with 20 bit[0m
+D (1033) efuse: In EFUSE_BLK1__DATA4_REG is used 5 bits starting with 27 bit[0m
+D (1040) efuse: In EFUSE_BLK1__DATA5_REG is used 3 bits starting with 0 bit[0m
+D (1047) efuse: In EFUSE_BLK1__DATA5_REG is used 8 bits starting with 3 bit[0m
+D (1054) efuse: In EFUSE_BLK1__DATA4_REG is used 7 bits starting with 13 bit[0m
+D (1061) efuse: In EFUSE_BLK1__DATA4_REG is used 7 bits starting with 20 bit[0m
+D (1068) efuse: In EFUSE_BLK1__DATA4_REG is used 5 bits starting with 27 bit[0m
+D (1075) efuse: In EFUSE_BLK1__DATA5_REG is used 3 bits starting with 0 bit[0m
+D (1082) efuse: In EFUSE_BLK1__DATA5_REG is used 8 bits starting with 3 bit[0m
+D (1097) clk: RTC_SLOW_CLK calibration value: 3904602[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+[0;32mI (1106) cpu_start: Pro cpu start user code[0m
+[0;32mI (1110) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1115) cpu_start: Application information:[0m
+[0;32mI (1120) cpu_start: Project name:     lvgl_demo[0m
+[0;32mI (1125) cpu_start: App version:      1[0m
+[0;32mI (1129) cpu_start: Compile time:     Jul 29 2024 15:22:36[0m
+[0;32mI (1135) cpu_start: ELF file SHA256:  c375e8877d0a5d83...[0m
+[0;32mI (1142) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (1147) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (1152) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (1157) cpu_start: Chip rev:         v0.2[0m
+V (1162) memory_layout: reserved range is 0x3c0c1554 - 0x3c0c157c[0m
+D (1168) memory_layout: Checking 6 reserved memory ranges:[0m
+D (1173) memory_layout: Reserved memory range 0x3c000000 - 0x3e000000[0m
+D (1180) memory_layout: Reserved memory range 0x3fc88000 - 0x3fc98500[0m
+D (1186) memory_layout: Reserved memory range 0x3fc98500 - 0x3fc9c878[0m
+D (1193) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000[0m
+D (1199) memory_layout: Reserved memory range 0x600fe000 - 0x600fe010[0m
+D (1206) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000[0m
+D (1212) memory_layout: Building list of available memory regions:[0m
+V (1219) memory_layout: Examining memory region 0x3c000000 - 0x3e000000[0m
+V (1225) memory_layout: Region 0x3c000000 - 0x3e000000 inside of reserved 0x3c000000 - 0x3e000000[0m
+V (1234) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000[0m
+V (1241) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc88000 - 0x3fc98500[0m
+V (1250) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000[0m
+V (1256) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc88000 - 0x3fc98500[0m
+V (1266) memory_layout: Start of region 0x3fc98500 - 0x3fca0000 overlaps reserved 0x3fc98500 - 0x3fc9c878[0m
+D (1276) memory_layout: Available memory region 0x3fc9c878 - 0x3fca0000[0m
+V (1282) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000[0m
+D (1289) memory_layout: Available memory region 0x3fca0000 - 0x3fcb0000[0m
+V (1296) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000[0m
+D (1302) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000[0m
+V (1309) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (1316) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000[0m
+V (1323) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000[0m
+D (1329) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000[0m
+V (1336) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710[0m
+D (1343) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710[0m
+V (1349) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000[0m
+V (1356) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000[0m
+D (1365) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34[0m
+V (1372) memory_layout: Examining memory region 0x600fe000 - 0x60100000[0m
+V (1379) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe010[0m
+V (1388) memory_layout: End of region 0x600fe010 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000[0m
+D (1398) memory_layout: Available memory region 0x600fe010 - 0x600fffe8[0m
+[0;32mI (1405) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (1412) heap_init: New heap initialised at 0x3fc9c878[0m
+[0;32mI (1417) heap_init: At 3FC9C878 len 0004CE98 (307 KiB): DRAM[0m
+[0;32mI (1423) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+D (1430) heap_init: New heap initialised at 0x600fe010[0m
+[0;32mI (1435) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (1442) esp_psram: Adding pool of 7360K of PSRAM memory to heap allocator[0m
+V (1449) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1456) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1464) intr_alloc: Connected src 39 to int 2 (cpu 0)[0m
+V (1469) memspi: raw_chip_id: 182085
+[0m
+V (1473) memspi: chip_id: 852018
+[0m
+V (1476) memspi: raw_chip_id: 182085
+[0m
+V (1480) memspi: chip_id: 852018
+[0m
+D (1484) spi_flash: trying chip: issi[0m
+D (1488) spi_flash: trying chip: gd[0m
+D (1491) spi_flash: trying chip: mxic[0m
+D (1495) spi_flash: trying chip: winbond[0m
+D (1499) spi_flash: trying chip: boya[0m
+D (1503) spi_flash: trying chip: th[0m
+D (1506) spi_flash: trying chip: mxic (opi)[0m
+D (1510) spi_flash: trying chip: generic[0m
+[0;32mI (1514) spi_flash: detected chip: generic[0m
+[0;32mI (1519) spi_flash: flash io: qio[0m
+D (1523) chip_generic: set_io_mode: status before 0x200[0m
+V (1528) chip_generic: set_io_mode: status update 0x200[0m
+D (1534) cpu_start: calling init function: 0x420376bc[0m
+D (1539) cpu_start: calling init function: 0x420029f0[0m
+D (1544) cpu_start: calling init function: 0x42001e30[0m
+D (1549) cpu_start: calling init function: 0x42006638 on core: 0[0m
+V (1555) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1562) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02[0m
+D (1570) intr_alloc: Connected src 59 to int 3 (cpu 0)[0m
+D (1575) cpu_start: calling init function: 0x42002794 on core: 0[0m
+V (1581) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1588) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1596) intr_alloc: Connected src 79 to int 9 (cpu 0)[0m
+[0;32mI (1601) app_start: Starting scheduler on CPU0[0m
+V (1606) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1606) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (1606) intr_alloc: Connected src 57 to int 12 (cpu 0)[0m
+V (1606) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1616) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E[0m
+D (1616) intr_alloc: Connected src 80 to int 2 (cpu 1)[0m
+[0;32mI (1626) app_start: Starting scheduler on CPU1[0m
+V (1626) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1636) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402[0m
+D (1646) intr_alloc: Connected src 58 to int 3 (cpu 1)[0m
+[0;32mI (1606) main_task: Started on CPU0[0m
+D (1656) heap_init: New heap initialised at 0x3fce9710[0m
+[0;32mI (1656) esp_psram: Reserving pool of 8K of internal memory for DMA/internal allocations[0m
+D (1666) esp_psram: Allocating block of size 8192 bytes[0m
+V (1676) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1676) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (1686) intr_alloc: Connected src 52 to int 13 (cpu 0)[0m
+[0;32mI (1696) main_task: Calling app_main()[0m
+[0;32mI (1696) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1706) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1716) https://www.eya-display.com/: io39 set_high[0m
+[0;32mI (1776) https://www.eya-display.com/: io39 set_low[0m
+V (1816) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1816) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (1816) intr_alloc: Connected src 42 to int 17 (cpu 0)[0m
+[0;32mI (1816) i2c_bus: i2c0 bus inited[0m
+[0;32mI (1826) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1836) lv_port_disp: Install RGB LCD panel driver[0m
+V (1866) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1866) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x90E[0m
+D (1876) intr_alloc: Connected src 24 to int 18 (cpu 0)[0m
+D (1876) gdma: new group (0) at 0x3c247944[0m
+D (1886) gdma: new pair (0,0) at 0x3c247988[0m
+D (1886) gdma: new tx channel (0,0) at 0x3c18c104[0m
+D (1896) gdma: tx channel (0,0), (4:64) bytes aligned, burst enabled[0m
+D (1896) lcd_panel.rgb: new rgb panel(0) @0x3fca1930, num_fbs=2, fb_size=768000, bb0 @0x0, bb1 @0x0, bb_size=0[0m
+D (1906) lcd_panel.rgb: fb[0] @0x3c0d0900[0m
+D (1916) lcd_panel.rgb: fb[1] @0x3c18c140[0m
+D (1916) lcd_hal: n=5,a=3,b=1,mo=2[0m
+D (1916) lcd_panel.rgb: rgb panel(0) start, pclk=15000000Hz[0m
+[0;32mI (1926) lv_port_disp: Turn on LCD backlight[0m
+[0;32mI (1926) lv_port_disp: LCD resolution: 800x480[0m
+[0;32mI (1936) lv_port_disp: Use frame buffers as LVGL draw buffers[0m
+[0;32mI (2046) gt911: gt911 init fail[0m
+[0;32mI (2146) CST3240: CST3240 init ok[0m
+[0;32mI (2146) https://www.eya-display.com/: init ok[0m
+[0;32mI (2226) main_task: Returned from app_main()[0m
